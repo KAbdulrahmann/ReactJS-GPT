@@ -1,0 +1,10 @@
+.brands{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+flex-wrap: wrap;
+margin: 1rem;
+}
+.brands img{
+    padding: 10px 15px;
+}

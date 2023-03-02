@@ -1,0 +1,143 @@
+.feature-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.feature-container .left-section{
+margin-right: 1rem;
+width: 33%;
+margin-right: 30px;
+}
+/* for background light blue */
+.feature-background{
+    position: relative;
+}
+.feature-container::before{
+    content: '';
+    display: flex;
+    position: absolute;
+width: 777px;
+height: 777px; 
+left: -444px;
+top: -200px; 
+z-index: -200;
+background: #07325F;
+filter: blur(282px);
+ }
+/* ----------- */
+.left-section h2{
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    margin: 0;
+}
+
+
+/* to make seond title padding */
+.left-section h4{
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+}
+/* ------------- */
+/* to make section title small */
+.feature-container  h1{
+    font-size: 1rem;
+    margin: 0;
+
+}
+/* ------- */
+/* .right-section{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+} */
+.right-section{
+    width: 67%;
+    display: grid;
+    /* grid-template-rows: repeat(3,1fr); */
+    /* grid-template-columns: repeat(3,1fr); */
+    gap: 20px;
+}
+.right-section :nth-child(1){
+grid-area:1/1/1/3 ;
+}
+.right-section :nth-child(4){
+    grid-area:3/1/3/3
+}
+
+
+.right-section .features-container__feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+} 
+@media screen and (max-width: 1150px) {
+    .feature-container .left-section{
+        width: 100%;
+    margin-right: 0;
+    }
+    .feature-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+width: 100%;
+    }
+    .right-section{
+        /* width: 50%; */
+        display: flex;
+        flex-direction: column;
+margin-left: 3rem; 
+margin-top: 2rem; 
+
+}
+    .right-section .features-container__feature{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    } 
+}
+@media screen and (max-width: 996px) {
+    .feature-container .left-section{
+        width: 100%;
+    margin-right: 0;
+    }
+    .feature-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+width: 100%;
+    }
+    .right-section{
+        /* width: 50%; */
+        display: flex;
+        flex-direction: column;
+margin-left: 3rem; 
+margin-top: 2rem; 
+
+}
+    .right-section .features-container__feature{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    } 
+}
+/* 
+ .feature-container .right-section{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+} */ 
